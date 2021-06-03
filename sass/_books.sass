@@ -1,0 +1,205 @@
+.books
+  padding-bottom: 79px
+  &-wrapper
+    display: flex
+.recommended
+  &__tab
+    height: 72px
+    width: 95%
+    text-decoration: none
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    text-align: center
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: $blue
+    text-transform: uppercase
+    background-color: lighten($blue, 50%)
+    mix-blend-mode: normal
+    border-radius: 8px
+    padding-top: 25px
+  &-wrapper
+    width: 780px
+    display: flex
+    flex-wrap: wrap
+  &__block
+    display: flex
+    flex-direction: column
+    justify-content: start
+  &__item
+    flex-basis: 47%
+    max-height: 260px
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+    border: 1px solid #ECEEF2
+    border-radius: 8px
+    margin-right: 25px
+    &:nth-child(2n)
+      margin-right: 0px
+    &:nth-child(5)
+      margin-bottom: 27px
+    &:nth-child(6)
+      margin-bottom: 27px
+  &__buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__img
+    margin-right: 20px
+    width: 160px
+    height: 242px
+    object-fit: cover
+    margin-bottom: 6px
+    margin-top: 11px
+    margin-left: 11px
+  &-title
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: $dark-blue
+    margin-bottom: 30px
+    margin-top: 0
+  &__title
+   width: 152px
+   margin-bottom: 16px
+   margin-top: 24px
+   font-family: Roboto
+   font-style: normal
+   font-weight: 500
+   font-size: 22px
+   line-height: 32px
+   letter-spacing: 0.2px
+
+   color: $dark-blue
+  &__subtitle
+    margin-bottom: 24px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark-blue
+
+  &__pricetag
+    margin-bottom: 31px
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.2px
+
+    color: $blue
+  &__button
+    background-color: $dark-blue
+    border-radius: 2000px
+    color: #fff
+    padding: 7px 20px
+    margin-bottom: 26px
+    border: none
+  &__buttons
+    align-items: flex-start
+.best
+  max-width: 400px
+  &-title
+    margin-top: 0px
+    margin-bottom: 30px
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.2px
+
+    color: #183B56
+  &-wrapper
+    background-color: lighten($opacity, 25% )
+    mix-blend-mode: normal
+    border-radius: 8px
+    padding-top: 24px
+    padding-bottom: 26px
+    padding-left: 24px
+    padding-right: 24px
+  &__item
+    z-index: 100
+    display: flex
+    margin-bottom: 32px
+  &__block
+    display: flex
+    flex-direction: column
+  &__img
+    width: 120px
+    height: 180px
+    object-fit: cover
+    margin-right: 25px
+  &-img
+    width: 120px
+    height: 100%
+  &__title
+    margin-top: 6px
+    margin-bottom: 15px
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    /* or 145% */
+    letter-spacing: 0.2px
+    color: #183B56
+
+  &__pricetag
+    margin-bottom: 29px
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.2px
+
+    color: $blue
+  &__button
+    padding: 7px 20px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: #FFFFFF
+    background: $dark-blue
+    border-radius: 2000px
+    border: none
+    width: 101px
+  &__hr
+    margin-top: 0
+    margin-bottom: 25px
+    border: 1px solid #ECEEF2
+  &__tab
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    /* identical to box height, or 125% */
+
+    text-align: center
+    letter-spacing: 0.2px
+
+    color: #1565D8
+    text-decoration: none
+    text-transform: uppercase
+.like
+  margin-top: 5px
+  cursor: pointer
