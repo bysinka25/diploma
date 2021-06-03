@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -27,6 +27,12 @@ body {
 }
 
 .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -400,7 +406,7 @@ body {
 }
 
 .swiper-container {
-  width: 1140px;
+  max-width: 1140px;
   height: 240px;
   position: relative;
 }
@@ -477,5 +483,112 @@ body {
 .between {
   margin: 0;
   border: 1px solid #ECEEF2;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+  .header-bottom {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .header-wrap {
+    width: 100%;
+    margin-right: auto;
+    align-items: center;
+  }
+  .header-wrapper {
+    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header__title {
+    text-align: center;
+    margin-right: 0;
+    max-width: 600px;
+  }
+  .header__subtitle {
+    text-align: center;
+  }
+  .header__text {
+    text-align: center;
+    max-width: 630px;
+    margin-bottom: 35px;
+  }
+  .buttons {
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .books-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .recommended-title {
+    text-align: center;
+  }
+  .recommended-wrapper {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .swiper-wrapper {
+    width: 90%;
+  }
+  .slider__item {
+    width: 230px;
+  }
+  .slider__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .best-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slider__title {
+    font-size: 17px;
+  }
+  .slider__subtitle {
+    font-size: 16px;
+  }
+  .best-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 700px;
+  }
+  .like {
+    display: none;
+  }
+  .recommended-wrapper {
+    flex-wrap: wrap;
+  }
+  .best-item {
+    width: 150px;
+  }
+  .best-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 87%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
