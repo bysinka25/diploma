@@ -41,3 +41,18 @@ const swiper = new Swiper(".swiper-container", {
     },
   },
 });
+var reviewsSlider = new Swiper(".unbublished-container", {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 5,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".unbublished-slider__button--next",
+    prevEl: ".unbublished-slider__button--prev",
+  },
+  effect: "slide",
+  keyboard: {
+    enabled: "true",
+    onlyInViewport: "true",
+  },
+});

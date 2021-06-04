@@ -1,6 +1,6 @@
 @media (max-width: 1200px)
   .container
-    width: 800px
+    width: 960px
   .header
     &-bottom
       padding-top: 30px
@@ -72,6 +72,15 @@
 @media (max-width: 767px)
   .container
     max-width: 576px
+  .recommended__item:nth-child(2n)
+    display: none
+  .recommended__item
+    margin-right: 0px
+    flex-basis: 60%
+  .recommended-wrapper
+    flex-wrap: wrap
+  .recommended__img
+    margin-right: 30px
 @media (max-width: 576px)
   .container
     width: 87%
