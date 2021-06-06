@@ -33,7 +33,7 @@ const swiper = new Swiper(".slider__advantages", {
       spaceBetweenSlides: 20,
     },
     991: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetweenSlides: 40,
     },
     776: {
@@ -57,5 +57,48 @@ var reviewsSlider = new Swiper(".unbublished-container", {
     enabled: "true",
     onlyInViewport: "true",
   },
+  1200: {
+    slidesPerView: 4,
+    spaceBetweenSlides: 20,
+  },
+  991: {
+    slidesPerView: 3,
+    spaceBetweenSlides: 30,
+  },
 });
-$clamp(myParagraph, { clamp: "15px" });
+// $clamp(myParagraph, { clamp: "15px" });
+// $(".video__play").on("click", function () {
+//   $(this).toggleClass("pause play");
+// });
+document.getElementById("play").onclick = function () {
+  if (document.getElementById(".video__play").paused) {
+    document.getElementById(".video__play").play();
+    this.innerHTML = "Pause";
+  } else {
+    document.getElementById("video__play").pause();
+    this.innerHTML = "Play";
+  }
+};
+var player;
+// $(".video__play").on("play", function () {
+//   //Меняем текст кнопки на "Пауза"
+// });
+
+// $(".video__play").on("pause", function () {
+//   //Меняем текст кнопки на "Воспроизвести"
+// });
+
+$(".video__play").on("click", function onYouTubeIframeAPIReady() {
+  player = new YT.Player("player", {
+    height: "100%",
+    width: "100%",
+    videoId: "gzeDQDbJMAU",
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange,
+    },
+  });
+});
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
