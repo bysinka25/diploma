@@ -7,6 +7,10 @@
     max-width: 960px
   .slider__advantages
     max-width: 960px
+    height: 550px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
   .slider__container
     max-width: 960px
   .unbublished__container
@@ -99,6 +103,8 @@
     display: none
   .coop__item
     flex-basis: 33%
+  .coop__img
+    text-align: center
   .coop__wrapper
     max-width: 800px
     align-items: center
@@ -120,7 +126,7 @@
     justify-content: space-between
   .video
     &__main
-      width: 661px
+      max-width: 90%
     &__history
       flex-wrap: wrap
       justify-content: center
@@ -162,7 +168,8 @@
   .recommended
     &__tab
       max-width: 470px  
-    &__item  
+    &__item:nth-child(2n)
+      display: none
   // .recommended__item
   //   display: flex
   //   flex-direction: column
@@ -174,13 +181,51 @@
   // .recommended__image
   //   width: 100%
   .unbublished__item
+    // text-align: center
     width: 206px
     height: 300px
-  .unbublished__img
-    width: 100%
+  .unbublished__title
+    // text-align: center
+    margin-bottom: 25px
   .coop__item:nth-child(2n)
     display: none
+  .unbublished-slider__button
+    top: 110%
+    width: 48px
+    height: 48px
+  .unbublished-slider__button--next
+    margin-left: 0
+    left: 50%
+  .unbublished-slider__button--prev
+    right: 50%
+    margin-right: 18px
+  .unbublished
+    padding-top: 48px
+    padding-bottom: 128px
 @media (max-width: 767px)
+  .header
+    &-nav
+      display: none
+    &-left
+      margin-top: 100px
+    &__title--color
+      
+    &-top
+      position: fixed
+      z-index: 99
+      padding-bottom: 30px
+      background-color: #fff
+    &--mobile
+      &-fixed
+        
+        left: 0
+        right: 0
+        top: 0
+        z-index: 1000
+      &--mobile
+        &--hidden
+          display: none
+    
   .slider__advantages
     max-width: 576px
   .slider__container
@@ -198,6 +243,28 @@
     margin-right: 30px
   .recommended__item--none
     display: none
+  #video__big
+    width: 400px
+  .unbublished__buttons
+    margin: auto
+  .menu
+    &-button
+      width: 16px
+      height: 11px
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $dark-blue
 @media (max-width: 576px)
   .container
     width: 87%
+img
+  z-index: 98

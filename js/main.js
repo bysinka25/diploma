@@ -1,6 +1,7 @@
 const swiper = new Swiper(".slider__advantages", {
   // Optional parameters
   slidesPerView: 4,
+  loop: false,
   // Navigation arrows
   navigation: {
     nextEl: ".slider__button-next",
@@ -15,31 +16,38 @@ const swiper = new Swiper(".slider__advantages", {
   breakpoints: {
     576: {
       slidesPerView: 4,
-      spaceBetweenSlides: 30,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: "row",
+      loop: false,
     },
     1920: {
       slidesPerView: 4,
+      slidesPerColumn: 2,
       spaceBetweenSlides: 40,
     },
     1440: {
       slidesPerView: 4,
       slidesPerColumn: 2,
-      spaceBetweenSlides: 26,
+      slidesPerColumnFill: "row",
+      loop: false,
     },
     1200: {
       slidesPerView: 4,
       slidesPerColumn: 2,
-      spaceBetweenSlides: 20,
+      slidesPerColumnFill: "row",
+      loop: false,
     },
     991: {
       slidesPerView: 4,
       slidesPerColumn: 2,
-      spaceBetweenSlides: 40,
+      slidesPerColumnFill: "row",
+      loop: false,
     },
     776: {
       slidesPerView: 4,
       slidesPerColumn: 2,
-      spaceBetweenSlides: 40,
+      slidesPerColumnFill: "row",
+      loop: false,
     },
   },
 });
