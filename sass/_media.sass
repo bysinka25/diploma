@@ -26,6 +26,9 @@
       margin-right: auto
       align-items: center
     &-left
+      display: flex
+      flex-direction: column
+      justify-content: centers
     &-wrapper
       flex-basis: 100%
       margin-left: auto
@@ -35,21 +38,33 @@
       flex-wrap: wrap
       justify-content: center
     &__title
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
       text-align: center
       margin-right: 0
-      max-width: 600px
+      max-width: 300px
     &__subtitle
+      text-align: center
+      font-size: 16px
       display: flex
       justify-content: center
-      text-align: center
+      // text-align: center
     &__text
+      font-size: 16px
       text-align: center
-      max-width: 630px
+      max-width: 280px
       margin-bottom: 35px
   .buttons
-    margin-left: auto
+    display: flex
+    flex-direction: column
     text-align: center
     margin-bottom: 30px
+    justify-content: center
+  .header .button__header--bottom
+    margin-right: 0px
+    margin-bottom: 15px
   .books-wrapper
     flex-wrap: wrap
     justify-content: center
@@ -149,6 +164,8 @@
     margin: auto
     margin-top: 36px
 @media (max-width: 991px)
+  .bottom
+    display: none
   .newsletter
     &-wrapper
       flex-wrap: wrap
@@ -177,8 +194,6 @@
     max-width: 700px
   .unbublished__container
     max-width: 700px
-  .like
-    display: none
   .recommended-wrapper
     flex-wrap: wrap
   .best-item
@@ -192,6 +207,12 @@
       max-width: 470px  
     &__item:nth-child(2n)
       display: none
+    &__title
+      font-size: 20px
+    &__block
+      margin-left: 0px
+    &__item
+      padding-right: 10px
   // .recommended__item
   //   display: flex
   //   flex-direction: column
@@ -225,12 +246,12 @@
     padding-top: 48px
     padding-bottom: 128px
   .slider__advantages
-    width: 85%
   .slider__item
-    margin-right: 10px
+    width: 330px
   .advantages-wrapper
-    width: 80%
-    align-items: center
+  .slider__button
+    top: 105%
+    right: 35%
 @media (max-width: 767px)
   .slider__title
     max-width: 112px
@@ -310,10 +331,12 @@
         height: 1px
         background-color: $dark-blue
   .slider__item
-    width: 140px
-    height: 182px
-    margin-right: 10px
-    margin-top: 10px
+    width: 270px
+    height: 170px
+  .books
+    padding-bottom: 30px
+  .slider
+    padding-bottom: 40px
 @media (max-width: 576px)
   .container
     width: 87%
@@ -338,6 +361,232 @@
     margin-right: 0
   .recommended__item
     flex-direction: column
+    max-height: 336px
+    width: 280px
+    position: relative
+    padding-right: 50px
+    padding-left: 50px
   .recommended__image
     width: 96px
     height: 138px
+    position: absolute
+    top: -13%
+  .recommended__img
+    width: 96px
+    height: 138px
+    margin: 0
+    padding: 0
+  .recommended__block
+    text-align: center
+    padding-bottom: 32px
+  .recommended__title
+    width: 100%
+    margin-bottom: 12px
+    margin-top: 18px
+  .recommended-title
+    padding-top: 40px
+    font-size: 28px
+    margin-bottom: 68px
+  .recommended__buttons
+    width: 160px
+    margin: auto
+  .recommended__pricetag
+    margin-bottom: 20px
+  .coop
+    padding-top: 37px
+    padding-bottom: 57px
+    &__wrapper
+    &__img
+      width: 130px
+    &__item
+      margin-top: 22px
+      width: 150px
+    &__title
+      padding-bottom: 7px
+  .blog
+    padding-top: 50px
+    padding-bottom: 48px
+    &__title
+      font-size: 28px
+      margin-bottom: 35px
+      
+    &__header
+      margin-bottom: 0px
+    &__mainimg
+      width: 280px
+      height: 120px
+      border-radius: 4.816px
+      object-fit: cover
+      overflow: hidden
+      padding-bottom: 0px
+      margin-bottom: 20px
+    &__leftside
+      display: flex
+      flex-direction: column
+    &__description
+      padding-bottom: 10px
+      font-size: 16px
+    &__image
+      object-fit: cover
+      width: 90px
+      height: 90px
+      border-radius: 4.816px
+    &__img
+      width: 90px
+    &__wrapper
+      justify-content: space-between
+    &__text
+      text-align: justify
+      font-size: 12px
+      line-height: 24px
+    &__describe
+      font-size: 14px
+      padding-bottom: 6px
+    &__date
+      font-size: 10px
+      padding-bottom: 6px
+    &__link
+      font-size: 10px
+    &__item
+      margin-bottom: 28px
+    &__item:nth-child(3n)
+      margin-bottom: 31px
+    &__button
+      margin-top: 0px
+  .newsletter
+    padding-bottom: 48px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      width: 180px
+    &-wrapper
+      padding-left: 24px
+      padding-right: 16px
+    &__form
+      height: 112px
+    &__img
+      top: 33%
+    &__button
+      width: 91%
+      margin-bottom: 12px
+      margin-right: 11px
+      margin-left: 11px
+  .footer
+    padding-bottom: 64px
+    &__title
+      font-size: 16px
+    &__link
+      font-size: 14px
+    &__li
+      width: 105px
+      padding-bottom: 15px
+      &--title
+        padding-bottom: 20px
+      &--last
+        padding-bottom: 39px
+    &__item
+      padding-right: 0
+      width: 105px
+      &--first
+        padding-left: 24px
+        padding-right: 6px
+      &--third
+        padding-left: 24px
+        padding-right: 6px
+  .footer .logo--footer
+    padding-bottom: 16px
+  .footer__text
+    padding-bottom: 16px
+  .video
+    padding-top: 44px
+    padding-bottom: 80px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+    &__history
+      padding-bottom: 35px
+    &__main
+      width: 300px
+      height: 210px
+      margin-right: 0
+      padding-bottom: 0
+      width: 93%
+    &__little
+      width: 140px
+      height: 140px
+      padding-right: 0
+      padding-left: 0
+    &__tit
+      font-size: 16px
+      line-height: 20px
+      margin: 0
+  #video__big
+    width: 300px
+    height: 210px
+  .header .button__header
+    width: 185px
+    font-size: 16px
+    padding: 6px 20px
+  .button__header .button__header--bottom
+    width: 185px
+    font-size: 16px
+    padding: 6px 20px
+  .buttons
+    align-items: center
+    margin-bottom: 30px
+  .header
+    &__text
+      margin-top: 32px
+      margin-bottom: 15px
+    &__title
+      margin-bottom: 24px
+    &__img
+      width: 280px
+      height: 333px
+    &-right
+      height: 280px
+      width: 280px
+  .header .image
+    right: 25%
+    width: 143px
+    height: 215px
+    top: 16%
+  .best
+    &__title
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 12px
+      width: 130px
+    &__pricetag
+      font-size: 20px
+      margin-bottom: 14px
+    &-img
+      width: 96px
+      height: 142px
+      object-fit: cover
+    &__img
+      margin-right: 0
+    &__tab
+      display: flex
+      align-items: center
+      margin: auto
+    &__item
+      margin: 0
+    &-wrapper
+      padding-left: 15px
+      padding-right: 30px
+    &__hr
+      display: none
+  .unbublished__title
+    font-size: 28px
+    margin-bottom: 0px
+  .advantages-wrapper
+  .slider__advantages
+    width: 300px
+  .slider__item
+    max-width: 140px
+    height: 185px

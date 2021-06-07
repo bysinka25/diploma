@@ -68,27 +68,21 @@ var reviewsSlider = new Swiper(".unbublished-container", {
   breakpoints: {
     1440: {
       slidesPerView: 5,
-      spaceBetweenSlides: 20,
     },
     1200: {
       slidesPerView: 5,
-      spaceBetweenSlides: 20,
     },
     991: {
       slidesPerView: 3,
-      spaceBetweenSlides: 20,
     },
     776: {
       slidesPerView: 1,
-      spaceBetweenSlides: 20,
     },
     576: {
       slidesPerView: 1,
-      spaceBetweenSlides: 20,
     },
     320: {
       slidesPerView: 1,
-      spaceBetweenSlides: 20,
     },
   },
 });
