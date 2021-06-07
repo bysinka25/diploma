@@ -1009,7 +1009,7 @@ body {
 }
 
 .video__main {
-  max-width: 1005px;
+  width: 1005px;
   padding-bottom: 30px;
   position: relative;
 }
