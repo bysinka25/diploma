@@ -1,4 +1,6 @@
 @media (max-width: 1200px)
+  .advantages-slide
+    height: 46%
   .advantages-wrapper
     display: flex
     flex-direction: column
@@ -147,6 +149,26 @@
     margin: auto
     margin-top: 36px
 @media (max-width: 991px)
+  .newsletter
+    &-wrapper
+      flex-wrap: wrap
+    &__input
+      height: 120px
+      width: 100%
+      padding-top: 0
+      padding-bottom: 34px
+    &__button
+      width: 98%
+      top: 50%
+      bottom: 0
+    &__form
+      width: 100%
+      margin-bottom: 28px
+    &__img
+      top: 30%
+    &__title
+      padding-top: 26px
+      padding-bottom: 32px
   .container
     max-width: 700px
   .slider__advantages
@@ -181,11 +203,11 @@
   // .recommended__image
   //   width: 100%
   .unbublished__item
-    // text-align: center
+    text-align: center
     width: 206px
     height: 300px
   .unbublished__title
-    // text-align: center
+    text-align: center
     margin-bottom: 25px
   .coop__item:nth-child(2n)
     display: none
@@ -195,14 +217,35 @@
     height: 48px
   .unbublished-slider__button--next
     margin-left: 0
-    left: 50%
+    left: 51%
   .unbublished-slider__button--prev
-    right: 50%
+    right: 49%
     margin-right: 18px
   .unbublished
     padding-top: 48px
     padding-bottom: 128px
+  .slider__advantages
+    width: 85%
+  .slider__item
+    margin-right: 10px
+  .advantages-wrapper
+    width: 80%
+    align-items: center
 @media (max-width: 767px)
+  .slider__title
+    max-width: 112px
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+  .slider__img
+    width: 36px
+    height: 36px
+    margin-top: 20px
+    margin-bottom: 16px
+  .slider__subtitle
+    max-width: 100px
+    font-size: 12px
+    line-height: 20px
   .header
     &-nav
       display: none
@@ -228,6 +271,9 @@
     
   .slider__advantages
     max-width: 576px
+    height: 400px
+  .advantages-wrapper
+    
   .slider__container
     max-width: 576px
   .unbublished__container
@@ -263,8 +309,35 @@
         width: 16px
         height: 1px
         background-color: $dark-blue
+  .slider__item
+    width: 140px
+    height: 182px
+    margin-right: 10px
+    margin-top: 10px
 @media (max-width: 576px)
   .container
     width: 87%
-img
-  z-index: 98
+  .footer__item
+    flex-basis: 50%
+  .footer__item--logo
+    flex-basis: 100%
+  .video__little
+    width: 49%
+  .video__little--title
+  .video__little--last
+    padding-left: 20px
+  .video__main
+    width: 98%
+  .coop__wrapper
+    justify-content: center
+  .blog__mainimg
+    text-align: center
+    width: 98%
+    margin: auto
+  .blog__leftside
+    margin-right: 0
+  .recommended__item
+    flex-direction: column
+  .recommended__image
+    width: 96px
+    height: 138px

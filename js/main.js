@@ -86,6 +86,10 @@ var reviewsSlider = new Swiper(".unbublished-container", {
       slidesPerView: 1,
       spaceBetweenSlides: 20,
     },
+    320: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 20,
+    },
   },
 });
 // $clamp(myParagraph, { clamp: "15px" });
