@@ -7,12 +7,17 @@
     flex-wrap: wrap
   .container
     max-width: 960px
+  .container-video
+    display: flex
+    flex-direction: column
+    align-items: center
   .slider__advantages
     max-width: 960px
     height: 550px
     display: flex
     flex-direction: column
     flex-wrap: wrap
+    justify-content: center
   .slider__container
     max-width: 960px
   .unbublished__container
@@ -78,8 +83,6 @@
   //   width: 180px
   .slider__item:nth-child(3)
     margin-right: 0
-  .video__little--none
-    display: none
   .best-wrapper
     display: flex
     flex-wrap: wrap
@@ -143,7 +146,8 @@
     justify-content: space-between
   .video
     &__main
-      max-width: 90%
+      width: 90%
+      height: 300px
     &__history
       flex-wrap: wrap
       justify-content: center
@@ -156,6 +160,11 @@
       align-items: center
       max-width: 450px
       justify-content: center
+    &__little--flex
+      display: flex
+      flex-direction: column
+      align-items: center
+
   .blog__button--visible
     display: none
   .blog__button--none
@@ -163,6 +172,12 @@
     align-items: center
     margin: auto
     margin-top: 36px
+  .video-wrapper
+    width: 90%
+    justify-content: space-between
+  .video__little--none
+    display: flex
+    flex-direction: column
 @media (max-width: 991px)
   .bottom
     display: none
@@ -252,6 +267,8 @@
   .slider__button
     top: 105%
     right: 35%
+  .video__little--none
+    display: none
 @media (max-width: 767px)
   .slider__title
     max-width: 112px
@@ -314,7 +331,7 @@
     width: 400px
   .unbublished__buttons
     margin: auto
-  .menu
+  .header .menu
     &-button
       width: 16px
       height: 11px
@@ -337,6 +354,8 @@
     padding-bottom: 30px
   .slider
     padding-bottom: 40px
+  .video-wrapper
+    width: 90%
 @media (max-width: 576px)
   .container
     width: 87%
@@ -516,14 +535,21 @@
       padding-bottom: 0
       width: 93%
     &__little
+      padding-top: 20px
       width: 140px
-      height: 140px
       padding-right: 0
       padding-left: 0
     &__tit
+      width: 99%
+      text-align: center
+      padding-top: 16px
       font-size: 16px
       line-height: 20px
       margin: 0
+    &__subtitle
+      padding-top: 6px
+      font-size: 12px
+      line-height: 20px
   #video__big
     width: 300px
     height: 210px
@@ -542,6 +568,9 @@
     &__text
       margin-top: 32px
       margin-bottom: 15px
+      display: flex
+      margin-left: auto
+      margin-right: auto
     &__title
       margin-bottom: 24px
     &__img
@@ -587,6 +616,27 @@
   .advantages-wrapper
   .slider__advantages
     width: 300px
+    height: 420px
   .slider__item
     max-width: 140px
     height: 185px
+  .container-video
+    justify-content: space-between
+  .video__little--flex
+    flex-basis: 47%
+  #video-little
+    width: 140px
+  #video
+    width: 140px
+  .video-wrapper
+    width: 87%
+    justify-content: space-between
+    flex-grow: 10px
+  .slider
+    padding-bottom: 99px
+    &__item
+      margin-bottom: 10px
+  .books
+    padding-bottom: 56px
+  .footer__li
+    margin: auto
