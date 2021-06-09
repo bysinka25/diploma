@@ -2,9 +2,14 @@
   background-color: #B3BAC5
   padding-top: 80px
   padding-bottom: 85px
+  &__title
+    padding-bottom: 56px
   &__item
     z-index: 10
-    margin-top: 56px
+  &__item:nth-child(-n+12)
+    padding-top: 56px 
+  &__item:nth-child(-n+6)
+    padding-top: 0px
   &__wrapper
     display: flex
     flex-wrap: wrap

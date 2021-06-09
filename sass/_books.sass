@@ -1,11 +1,14 @@
 .books
   padding-bottom: 79px
+  .like
+    background-color: #fff
+    border: none
   &-wrapper
     display: flex
 .recommended
   &__tab
-    height: 72px
-    width: 95%
+    padding: 26px 10px
+    width: 98%
     text-decoration: none
     font-family: Roboto Condensed, Sans-serif
     font-style: normal
@@ -19,7 +22,6 @@
     background-color: lighten($blue, 50%)
     mix-blend-mode: normal
     border-radius: 8px
-    padding-top: 25px
   &-wrapper
     max-width: 780px
     display: flex
@@ -127,9 +129,10 @@
     padding-top: 24px
     padding-left: 24px
     padding-bottom: 24px
+    padding-right: 49px
     border: 1px solid lighten($opacity, 22% )
   &__item
-    z-index: 100
+    z-index: 9
     display: flex
     margin-bottom: 32px
   &__block
@@ -185,8 +188,9 @@
   &__hr
     margin-top: 0
     margin-bottom: 25px
-    border: 1px solid #ECEEF2
+    
   &__tab
+    border-top: 2px solid #ECEEF2
     font-family: Roboto Condensed, Sans-serif
     font-style: normal
     font-weight: bold
@@ -200,7 +204,19 @@
     color: #1565D8
     text-decoration: none
     text-transform: uppercase
-    margin-left: 100px
+    width: 100%
+    padding-top: 25px
+  &__link
+    font-family: Roboto Condensed, Sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-decoration: none
+    color: $blue
+    
 .like
   margin-top: 5px
   cursor: pointer
+a
+  text-decoration: none

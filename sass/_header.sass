@@ -14,6 +14,7 @@
     margin: 0
     display: flex
     align-items: center
+    padding-left: 0px
   &__link
     color: #183B56
     font-family: Open Sans, Sans-serif
@@ -23,22 +24,18 @@
     line-height: 22px
     margin-right: 25px
     style-type: none
+    &--last
+      margin-right: 0px
+    
   &__link:hover
     cursor: pointer
     color: $yellow
     transition: 0.3s all ease-out
     &--last
       margin-right: 70px
-  .button
-    &--transparent
-      margin-left: 38px
-    &--transparent:hover
-      background-color: $yellow
-      color: #fff
+  .header
+    &__button
       transition: 0.3s all ease-out
-      cursor: pointer
-      border: 2px solid $yellow
-    &__header
       font-family: Open Sans
       font-style: normal
       font-weight: bold
@@ -48,6 +45,13 @@
       color: $blue
       border: 2px solid $blue
       background-color: transparent
+      &--transparent
+        margin-left: 38px
+      &--transparent:hover
+        background-color: $yellow
+        color: #fff
+        cursor: pointer
+        border: 2px solid $yellow
       &--bottom
         text-transform: uppercase
         padding: 18px 37px
@@ -58,17 +62,14 @@
       &--bottom:hover
          background-color: $yellow
          color: #fff
-         transition: 0.3s all ease-out
          cursor: pointer
          border: 2px solid $yellow
       &--transparent
-        
         text-transform: uppercase
         padding: 17px 50px
       &--transparent:hover
          background-color: $yellow
          color: #fff
-         transition: 0.3s all ease-out
          cursor: pointer
          border: 2px solid $yellow
       

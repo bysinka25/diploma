@@ -20,32 +20,15 @@ const swiper = new Swiper(".slider__advantages", {
       slidesPerColumnFill: "row",
       loop: false,
     },
-    1920: {
-      slidesPerView: 4,
-      slidesPerColumn: 2,
-      spaceBetweenSlides: 40,
-    },
-    1440: {
-      slidesPerView: 4,
-      slidesPerColumn: 2,
-      slidesPerColumnFill: "row",
-      loop: false,
-    },
     1200: {
-      slidesPerView: 4,
-      slidesPerColumn: 2,
       slidesPerColumnFill: "row",
       loop: false,
     },
     991: {
-      slidesPerView: 4,
-      slidesPerColumn: 2,
       slidesPerColumnFill: "row",
       loop: false,
     },
     776: {
-      slidesPerView: 4,
-      slidesPerColumn: 2,
       slidesPerColumnFill: "row",
       loop: false,
     },
@@ -54,7 +37,7 @@ const swiper = new Swiper(".slider__advantages", {
 var reviewsSlider = new Swiper(".unbublished-container", {
   // Optional parameters
   slidesPerView: 5,
-  spaceBetweenSlides: 30,
+  spaceBetweenSlides: 10,
   // Navigation arrows
   navigation: {
     nextEl: ".unbublished-slider__button--next",
@@ -70,13 +53,13 @@ var reviewsSlider = new Swiper(".unbublished-container", {
       slidesPerView: 5,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
     991: {
       slidesPerView: 3,
     },
     776: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     576: {
       slidesPerView: 1,
@@ -124,9 +107,11 @@ var reviewsSlider = new Swiper(".unbublished-container", {
 // }
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
+var closeModalOverlay = $(".modal__overlay");
 modalButton.on("click", openModal);
 
 closeModalButton.on("click", closeModal);
+closeModalOverlay.on("click", closeModal);
 
 function openModal() {
   var modalOverlay = $(".modal__overlay");
@@ -153,5 +138,18 @@ $(document).keyup(function (event) {
   if (event.which == "27") {
     $(".modal__overlay").removeClass("modal__overlay--visible");
     $(".modal__dialog").removeClass("modal__dialog--visible");
+  }
+});
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".header-nav")
+    .classList.toggle(".header-nav--visible");
+  var $body = $(document.body);
+  if ($body.css("overflow") == "hidden") {
+    $body.css("overflow", "auto");
+  } else {
+    $body.css("overflow", "hidden");
   }
 });

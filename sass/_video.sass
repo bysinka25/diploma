@@ -1,6 +1,12 @@
 .video
   padding-top: 96px
   padding-bottom: 80px
+  &__decribe
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__describe
+    display: flex
   &__title
     margin: 0
     ont-family: Roboto Condensed, sans-serif
@@ -15,8 +21,7 @@
   &__history
     align-items: flex-start
     display: flex
-    max-width: 1005px
-    justify-content: space-between
+    justify-content: center
     padding-bottom: 30px
   &__text
     font-family: Open Sans, sans-serif
@@ -30,8 +35,7 @@
     max-width: 383px
   &-wrapper
     display: flex
-    width: 1005px
-    justify-content: space-between
+    justify-content: space-evenly
   &__little
     display: flex
     flex-direction: column
@@ -65,13 +69,21 @@
     left: 45%
     cursor: pointer
   &__main
-    width: 1005px
+    display: flex
+    justify-content: center
     height: 380px
     padding-bottom: 30px
     position: relative
+    width: 1005px
+    margin: auto
   // .container-video
   //   display: flex
   //   flex-direction: column
   //   align-items: center
   #video
     height: 200px
+  
+  .video__button
+    border: none
+    background-color: #fff
+  .video__icon:hover

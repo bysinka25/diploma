@@ -1,10 +1,6 @@
 @media (max-width: 1200px)
   .advantages-slide
     height: 46%
-  .advantages-wrapper
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
   .container
     max-width: 960px
   .container-video
@@ -34,6 +30,7 @@
       display: flex
       flex-direction: column
       justify-content: centers
+      margin-right: 40px
     &-wrapper
       flex-basis: 100%
       margin-left: auto
@@ -61,13 +58,15 @@
       text-align: center
       max-width: 280px
       margin-bottom: 35px
-  .buttons
+  .header__buttons
     display: flex
     flex-direction: column
     text-align: center
     margin-bottom: 30px
     justify-content: center
-  .header .button__header--bottom
+  .header .header__button
+    margin-left: 0px
+  .header .header__button--bottom
     margin-right: 0px
     margin-bottom: 15px
   .books-wrapper
@@ -119,10 +118,16 @@
       width: 290px
     &__image
       width: 100%
-  .coop__item:nth-child(2n)
+  .coop__item:nth-child(4n)
     display: none
   .coop__item
     flex-basis: 33%
+    margin-top: 40px
+  .coop__item:nth-child(-n+12)
+    padding-top: 0
+  .coop__item:nth-child(-n+3)
+    padding-top: 0px
+    margin-top: 0px
   .coop__img
     text-align: center
   .coop__wrapper
@@ -145,8 +150,10 @@
     flex-wrap: wrap
     justify-content: space-between
   .video
+    &__tit
+      text-align: center
     &__main
-      width: 90%
+      width: 95%
       height: 300px
     &__history
       flex-wrap: wrap
@@ -173,9 +180,12 @@
     margin: auto
     margin-top: 36px
   .video-wrapper
-    width: 90%
+    width: 99%
     justify-content: space-between
   .video__little--none
+    display: flex
+    flex-direction: column
+  .video__decribe
     display: flex
     flex-direction: column
 @media (max-width: 991px)
@@ -220,7 +230,7 @@
   .recommended
     &__tab
       max-width: 470px  
-    &__item:nth-child(2n)
+    &__item:nth-child(4n)
       display: none
     &__title
       font-size: 20px
@@ -245,7 +255,7 @@
   .unbublished__title
     text-align: center
     margin-bottom: 25px
-  .coop__item:nth-child(2n)
+  .coop__item:nth-child(4n)
     display: none
   .unbublished-slider__button
     top: 110%
@@ -269,7 +279,11 @@
     right: 35%
   .video__little--none
     display: none
+  .header-left
+    margin-right: 0px
 @media (max-width: 767px)
+  .coop__item:nth-child(4n)
+    display: none
   .slider__title
     max-width: 112px
     font-size: 16px
@@ -287,11 +301,17 @@
   .header
     &-nav
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      &--visible
+        display: block
     &-left
-      margin-top: 100px
     &__title--color
-      
+  .header-nav--visible
+    display: flex
     &-top
+      padding: 16px
       position: fixed
       z-index: 99
       padding-bottom: 30px
@@ -302,7 +322,7 @@
         left: 0
         right: 0
         top: 0
-        z-index: 1000
+        z-index: 10
       &--mobile
         &--hidden
           display: none
@@ -355,8 +375,18 @@
   .slider
     padding-bottom: 40px
   .video-wrapper
-    width: 90%
+    width: 99%
 @media (max-width: 576px)
+  .advantages-wrapper
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+  .coop__item:nth-child(12n)
+    display: block
+  .coop__item--none
+    display: none
+  .coop__item
+    margin-top: 0px
   .container
     width: 87%
   .footer__item
@@ -364,7 +394,7 @@
   .footer__item--logo
     flex-basis: 100%
   .video__little
-    width: 49%
+    width: 200px
   .video__little--title
   .video__little--last
     padding-left: 20px
@@ -413,15 +443,21 @@
     margin-bottom: 20px
   .coop
     padding-top: 37px
-    padding-bottom: 57px
+    padding-bottom: 29px
     &__wrapper
+      margin: auto
     &__img
-      width: 130px
+      width: 100%
     &__item
-      margin-top: 22px
-      width: 150px
+      
+      flex-basis: 50%
+      padding-bottom: 28px
     &__title
-      padding-bottom: 7px
+      padding-bottom: 27px
+    &__item:nth-child(-n+12)
+      padding-top: 0px 
+    &__item:nth-child(-n+6)
+      padding-top: 0px
   .blog
     padding-top: 50px
     padding-bottom: 48px
@@ -519,6 +555,8 @@
   .video
     padding-top: 44px
     padding-bottom: 80px
+    &-wrapper
+      align-items: center
     &__title
       font-size: 28px
       line-height: 36px
@@ -531,7 +569,6 @@
     &__main
       width: 300px
       height: 210px
-      margin-right: 0
       padding-bottom: 0
       width: 93%
     &__little
@@ -539,8 +576,10 @@
       width: 140px
       padding-right: 0
       padding-left: 0
+      &--flex
+        padding-right: 0
     &__tit
-      width: 99%
+      width: 134px
       text-align: center
       padding-top: 16px
       font-size: 16px
@@ -553,15 +592,14 @@
   #video__big
     width: 300px
     height: 210px
-  .header .button__header
+  .header .header__button
     width: 185px
     font-size: 16px
     padding: 6px 20px
-  .button__header .button__header--bottom
+  .header .header__button_ .header__button--bottom
     width: 185px
     font-size: 16px
-    padding: 6px 20px
-  .buttons
+  .header .header__buttons
     align-items: center
     margin-bottom: 30px
   .header
@@ -624,14 +662,13 @@
     justify-content: space-between
   .video__little--flex
     flex-basis: 47%
+  .video-wrapper
+    width: 99%
+    justify-content: space-evenly
   #video-little
     width: 140px
   #video
     width: 140px
-  .video-wrapper
-    width: 87%
-    justify-content: space-between
-    flex-grow: 10px
   .slider
     padding-bottom: 99px
     &__item
