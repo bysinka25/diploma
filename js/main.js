@@ -1,12 +1,12 @@
-const swiper = new Swiper(".slider__advantages", {
+const swiper = new Swiper(".merit-container", {
   // Optional parameters
   slidesPerView: 4,
+  spaceBetween: 26,
   loop: false,
   // Navigation arrows
   navigation: {
-    nextEl: ".slider__button-next",
-    // prevEl: ".slider__button-prev",
-    // prevEl: ".swiper-button-prev",
+    nextEl: ".merit__button--next",
+    prevEl: ".merit__button--prev",
   },
   effect: "slide",
   keyboard: {
@@ -21,14 +21,17 @@ const swiper = new Swiper(".slider__advantages", {
       loop: false,
     },
     1200: {
+      slidesPerView: 4,
       slidesPerColumnFill: "row",
       loop: false,
     },
     991: {
+      slidesPerView: 4,
       slidesPerColumnFill: "row",
       loop: false,
     },
     776: {
+      slidesPerView: 4,
       slidesPerColumnFill: "row",
       loop: false,
     },
@@ -51,21 +54,27 @@ var reviewsSlider = new Swiper(".unbublished-container", {
   breakpoints: {
     1440: {
       slidesPerView: 5,
+      spaceBetweenSlides: 10,
     },
     1200: {
       slidesPerView: 4,
+      spaceBetweenSlides: 10,
     },
     991: {
       slidesPerView: 3,
+      spaceBetweenSlides: 10,
     },
     776: {
       slidesPerView: 2,
+      spaceBetweenSlides: 10,
     },
     576: {
       slidesPerView: 1,
+      spaceBetweenSlides: 10,
     },
     320: {
       slidesPerView: 1,
+      spaceBetweenSlides: 10,
     },
   },
 });
@@ -143,9 +152,7 @@ $(document).keyup(function (event) {
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function () {
   console.log("Клик по кнопке меню");
-  document
-    .querySelector(".header-nav")
-    .classList.toggle(".header-nav--visible");
+  document.querySelector(".header-nav").classList.toggle("header-nav--visible");
   var $body = $(document.body);
   if ($body.css("overflow") == "hidden") {
     $body.css("overflow", "auto");
@@ -153,3 +160,32 @@ menuButton.addEventListener("click", function () {
     $body.css("overflow", "hidden");
   }
 });
+// Обработка форм
+$(".modal__form").validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be more than two letters",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+    phone: {
+      required: "Phone is required",
+      minlength: "You must enter 10 digits",
+    },
+  },
+});
+$(".newsletter__form").validate({
+  errorClass: "invalid",
+  messages: {
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  },
+});
+$(".modal__input--phone_us").mask("+7 (000) 000-00-00");
+AOS.init();

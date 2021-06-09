@@ -25,7 +25,7 @@
               <img class="logo__img" src="img/Logo.png" alt="" />
             </a>
             <nav class="header-nav">
-              <ul class="header-nav">
+              <ul class="header__ul">
                 <li class="header__link">
                   <a class="link" href="#!">Рекомендации</a>
                 </li>
@@ -290,70 +290,77 @@
         </div>
       </div>
     </section>
-    <section class="slider">
-      <div class="container">
-        <div class="slider__container">
-          <div class="swiper">
-            <div class="swiper-container slider__advantages">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper advantages-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide advantages-slide">
-                  <div class="slider__item">
-                    <div class="slider__img">
-                      <img
-                        class="slider__image"
-                        src="img/Presentation.svg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__title">Бизнес & Финансы</h2>
-                    <span class="slider__subtitle">Книги про мир бизнеса</span>
-                  </div>
-                </div>
-
-                <div class="swiper-slide advantages-slide">
-                  <div class="slider__item">
-                    <div class="slider__img">
-                      <img class="slider__image" src="img/Diamond.svg" alt="" />
-                    </div>
-                    <h2 class="slider__title">Самомотиватия</h2>
-                    <span class="slider__subtitle">Книги о мотивации</span>
-                  </div>
-                </div>
-                <div class="swiper-slide advantages-slide">
-                  <div class="slider__item">
-                    <div class="slider__img">
-                      <img class="slider__image" src="img/Bookk.svg" alt="" />
-                    </div>
-                    <h2 class="slider__title">Романы Теленовеллы</h2>
-                    <span class="slider__subtitle"
-                      >Книги с крутыми историями</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide advantages-slide">
-                  <div class="slider__item">
-                    <div class="slider__img">
-                      <img class="slider__image" src="img/Group.svg" alt="" />
-                    </div>
-                    <h2 class="slider__title">Навыки будущего</h2>
-                    <span class="slider__subtitle"
-                      >Книги для самоподготовки</span
-                    >
-                  </div>
-                </div>
+    <section class="merit">
+      <div class="container merit__container">
+        <div class="swiper-container merit-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper merit-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Бизнес & Финансы</h2>
+                <span class="merit__subtitle">Книги про мир бизнеса</span>
               </div>
-              <!-- If we need navigation buttons -->
-              <!-- <div class="swiper-button-prev"></div> -->
             </div>
-            <!--/.swiper-container-->
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Самомотивация</h2>
+                <span class="merit__subtitle">Книги о мотивации</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Романы Теленовеллы</h2>
+                <span class="merit__subtitle">Книги с крутыми историями</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Навыки будущего</h2>
+                <span class="merit__subtitle">Книги для самоподготовки </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Бизнес & Финансы</h2>
+                <span class="merit__subtitle"></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Бизнес & Финансы</h2>
+                <span class="merit__subtitle"></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Бизнес & Финансы</h2>
+                <span class="merit__subtitle"></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="merit__item">
+                <img class="merit__img" src="img/diamond.svg" alt="" />
+                <h2 class="merit__title">Бизнес & Финансы</h2>
+                <span class="merit__subtitle"></span>
+              </div>
+            </div>
           </div>
-          <div class="swiper-navigation">
-            <button class="slider__button slider__button-next"></button>
-            <button class="slider__button slider__button-prev"></button> -->
-          </div>
+          <!-- If we need pagination -->
         </div>
+        <div
+          class="merit__button merit__button--prev swiper-button-disabled"
+        ></div>
+        <div
+          class="merit__button merit__button--next swiper-button-disabled"
+        ></div>
       </div>
     </section>
     <section class="unbublished">
@@ -477,11 +484,13 @@
             <div
               class="
                 unbublished-slider__button unbublished-slider__button--prev
+                swiper-button-disabled
               "
             ></div>
             <div
               class="
                 unbublished-slider__button unbublished-slider__button--next
+                swiper-button-disabled
               "
             ></div>
           </div>
@@ -883,6 +892,8 @@
     <!-- /.books -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
     <script src="js/clamp.js"></script>
     <script src="js/main.js"></script>
   </body>

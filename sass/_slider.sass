@@ -1,71 +1,43 @@
-.slider
-  padding-bottom: 90px
-  &__image
-    width: 100%
-  &__button
-    top: 50%
-    transform: translateY(-70%)
-    position: absolute
-    width: 56px
-    height: 56px
-    border: none
-    background-color: #fff
-    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
-    border-radius: 50%
-    z-index: 99
-    cursor: pointer
-    &-next
-      right: 0
-      margin-right: 0px
-      background-image: url(../img/arrow__next.svg)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 18px
-    // &-left
-    //   left: 0
-    //   background-image: url(../img/arrow__next.svg)
-    //   background-repeat: no-repeat
-    //   background-position: center
-    //   background-size: 18px
-    //   margin-right: 20px
-  &__img
-    margin-top: 40px
-    margin-bottom: 40px
+.merit
+  padding-top: 60px
+  padding-bottom: 100px
+  &__container
+    position: relative
+    border-top: 1px solid #ECEEF2
+    margin: 0 auto
+    max-width: 1160px
+    padding-top: 60px
+  &-container
+    max-width: 1140px
   &__item
-    overflow: hidden   
-    white-space: nowrap   
-    text-overflow: ellipsis
-    margin-right: 40px
-    width: 270px
-    height: 240px
-    padding-right: 14px
-    padding-left: 14px
-    padding-bottom: 25px
+    padding-top: 40px
     display: flex
     flex-direction: column
     align-items: center
     border: 1px solid #ECEEF2
+    box-sizing: border-box
     border-radius: 8px
+    padding-right: 15px
+    padding-left: 15px
+    padding-bottom: 30px
   &__title
-    width: 240px
-    margin-top: 0px
-    margin-bottom: 12px
+    width: 250px
+    padding-top: 40px
+    padding-bottom: 12px
+    margin: 0
     font-family: Roboto
     font-style: normal
     font-weight: 500
     font-size: 22px
     line-height: 32px
     /* identical to box height, or 145% */
-
     text-align: center
     letter-spacing: 0.2px
 
     color: #183B56
   &__subtitle
-    width: 230px
-    margin-top: 0
-    margin-bottom: 0
-    font-family: Open Sans, Sans-serif
+    margin: 0
+    font-family: Open Sans
     font-style: normal
     font-weight: normal
     font-size: 16px
@@ -73,17 +45,147 @@
     /* identical to box height */
     text-align: center
     color: #5A7184
-.slider__advantages
+  &__button
+    position: absolute
+    top: 50%
+    width: 56px
+    height: 56px
+    border: none
+    background-color: #fff
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+    border-radius: 50%
+    z-index: 1000
+    cursor: pointer
+    &--prev
+      transform: translateX(-50%)
+      left: 0
+      background-image: url(../img/arrow__prev.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 18px
+      margin-right: 50px
+    &--next
+      right: 0
+      margin-right: 0px
+      background-image: url(../img/arrow__next.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 18px
   
-  max-width: 1140px
-  height: 250px
-  position: relative
-.slider__container
-  border-top: 1px solid #ECEEF2
-  margin: 0 auto
-  max-width: 1150px
-  position: relative
-  padding-top: 60px
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  // .slider
+//   padding-bottom: 90px
+//   &__image
+//     width: 100%
+//   &__button
+//     top: 50%
+//     transform: translateY(5%)
+//     position: absolute
+//     width: 56px
+//     height: 56px
+//     border: none
+//     background-color: #fff
+//     box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+//     border-radius: 50%
+//     z-index: 99
+//     cursor: pointer
+//     &--next
+//       right: 0
+//       margin-right: 0px
+//       background-image: url(../img/arrow__next.svg)
+//       background-repeat: no-repeat
+//       background-position: center
+//       background-size: 18px
+//   .slider-button--prev
+//     top: 50%
+//     transform: translateX(-60%)
+//     position: absolute
+//     width: 56px
+//     height: 56px
+//     border: none
+//     background-color: #fff
+//     box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+//     border-radius: 50%
+//     z-index: 99
+//     cursor: pointer
+    
+//   &__img
+//     margin-top: 40px
+//     margin-bottom: 40px
+//   &__item
+//     overflow: hidden   
+//     white-space: nowrap   
+//     text-overflow: ellipsis
+//     margin-right: 40px
+//     width: 270px
+//     height: 240px
+//     padding-right: 14px
+//     padding-left: 14px
+//     padding-bottom: 25px
+//     display: flex
+//     flex-direction: column
+//     align-items: center
+//     border: 1px solid #ECEEF2
+//     border-radius: 8px
+//   &__title
+//     overflow: hidden   
+//     white-space: nowrap   
+//     text-overflow: ellipsis
+//     width: 240px
+//     margin-top: 0px
+//     margin-bottom: 12px
+//     font-family: Roboto
+//     font-style: normal
+//     font-weight: 500
+//     font-size: 22px
+//     line-height: 32px
+//     /* identical to box height, or 145% */
+
+//     text-align: center
+//     letter-spacing: 0.2px
+
+//     color: #183B56
+//   &__subtitle
+//     width: 230px
+//     margin-top: 0
+//     margin-bottom: 0
+//     font-family: Open Sans, Sans-serif
+//     font-style: normal
+//     font-weight: normal
+//     font-size: 16px
+//     line-height: 22px
+//     /* identical to box height */
+//     text-align: center
+//     color: #5A7184
+// .slider__advantages
+  
+//   max-width: 1140px
+//   height: 250px
+//   position: relative
+// .slider__container
+//   border-top: 1px solid #ECEEF2
+//   margin: 0 auto
+//   max-width: 1150px
+//   position: relative
+//   padding-top: 60px
 .unbublished__container
   margin: 0 auto
   max-width: 1160px

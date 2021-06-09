@@ -3,12 +3,14 @@
   color: #fff
   padding-top: 60px
   padding-bottom: 80px
-  &-container 
+  &-container
+    
     max-width: 1140px
     height: 315px
-    position: relative
-    z-index: 999
+    z-index: 20
+  &__container
   &__title
+    flex-basis: 100%
     font-family: 'Roboto Condensed', Sans-serif
     font-style: normal
     font-weight: bold
@@ -47,11 +49,11 @@
         background-size: 18px
   &__item
     margin-top: 15px
-    width: 220px
     // padding-right: 13px
     // padding-left: 13px
     // padding-top: 10px
     // padding-bottom: 10px
   &__img
-    width: 100%
     object-fit: cover
+  .swiper-button-disabled
+    opacity: 0.1

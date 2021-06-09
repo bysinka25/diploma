@@ -282,6 +282,9 @@
   .header-left
     margin-right: 0px
 @media (max-width: 767px)
+  .header-nav
+    display: flex
+    flex-direction: column
   .coop__item:nth-child(4n)
     display: none
   .slider__title
@@ -300,12 +303,33 @@
     line-height: 20px
   .header
     &-nav
+      display: flex
+      flex-direction: column
       display: none
       position: fixed
       left: 0
       right: 0
+      bottom: 0
+      top: 70px
+      padding-top: 30px
+      overflow: scroll
+      z-index: 20
+      background-color: #fff
+      color: #fff
       &--visible
         display: block
+    &__ul
+      align-items: center
+      margin: 0
+      padding: 0
+      color: #fff
+      flex-direction: column
+    &__link
+      margin-bottom: 20px
+      margin-right: 0px
+      color: #fff
+    &-button
+      margin-left: 0px
     &-left
     &__title--color
   .header-nav--visible
