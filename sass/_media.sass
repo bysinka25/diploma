@@ -1,4 +1,5 @@
 @media (max-width: 1200px)
+  .merit
   .advantages-slide
     height: 46%
   .container
@@ -188,7 +189,33 @@
   .video__decribe
     display: flex
     flex-direction: column
+  .newsletter__title
+    margin-right: 20px
+  .merit__title
+    max-width: 160px
+  .merit__item
+    height: 300px
 @media (max-width: 991px)
+  .merit
+    &__title
+      padding-top: 16px
+      padding-bottom: 20px
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      font-size: 12px
+      line-height: 20px
+    &__button
+      top: 110%
+      &--next
+        right: 42%
+      &--prev
+        left: 42%
+    &__item
+      height: 220px
+  #email-error
+    z-index: 10
+    top: 0
   .bottom
     display: none
   .newsletter
@@ -196,18 +223,21 @@
       flex-wrap: wrap
     &__input
       height: 120px
-      width: 100%
       padding-top: 0
-      padding-bottom: 34px
+      padding-bottom: 20px
+      width: 576px
     &__button
+      margin-bottom: 10px
       width: 98%
-      top: 50%
-      bottom: 0
+      height: 50px
+      top: 49%
+      bottom: 15%
+      padding: 0
     &__form
       width: 100%
       margin-bottom: 28px
     &__img
-      top: 30%
+      top: 35%
     &__title
       padding-top: 26px
       padding-bottom: 32px
@@ -281,7 +311,31 @@
     display: none
   .header-left
     margin-right: 0px
+  .modal__contacts-input
+    display: flex
+    flex-wrap: wrap
+  .modal__button
+    margin-bottom: 20px
 @media (max-width: 767px)
+  .coop__title
+    margin-bottom: 32px
+  .merit
+    &__title
+      max-width: 120px
+      padding-top: 16px
+      padding-bottom: 20px
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      font-size: 12px
+      line-height: 20px
+    &__item
+      padding-top: 16px
+      padding-bottom: 20px
+      margin: 0
+    &__button
+      top: 100%
+    &-container
   .header-nav
     display: flex
     flex-direction: column
@@ -401,6 +455,16 @@
   .video-wrapper
     width: 99%
 @media (max-width: 576px)
+  .merit__item
+    width: 140px
+    height: 182px
+  .merit__img
+    width: 36px
+    height: 36px
+  .merit__button--prev
+    left: 35%
+  .merit__button--next
+    right: 35%
   .advantages-wrapper
     display: flex
     flex-direction: column
@@ -475,9 +539,9 @@
     &__item
       
       flex-basis: 50%
-      padding-bottom: 28px
+      margin-bottom: 27px
     &__title
-      padding-bottom: 27px
+      margin-bottom: 27px
     &__item:nth-child(-n+12)
       padding-top: 0px 
     &__item:nth-child(-n+6)
@@ -537,7 +601,6 @@
     &__title
       font-size: 28px
       line-height: 36px
-      width: 180px
     &-wrapper
       padding-left: 24px
       padding-right: 16px
@@ -572,10 +635,9 @@
       &--third
         padding-left: 24px
         padding-right: 6px
-  .footer .logo--footer
-    padding-bottom: 16px
   .footer__text
-    padding-bottom: 16px
+    margin-top: 16px
+    margin-bottom: 16px
   .video
     padding-top: 44px
     padding-bottom: 80px
@@ -701,3 +763,7 @@
     padding-bottom: 56px
   .footer__li
     margin: auto
+  .merit__item
+  .merit__title
+    font-size: 16px
+    line-height: 20px

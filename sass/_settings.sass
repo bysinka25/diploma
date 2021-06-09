@@ -4,6 +4,9 @@ $dark-blue: #183B56
 $text-color: #5A7184
 $opacity: #B3BAC5
 $link: #1665D8
+a
+  text-decoration: none
+
 *
   box-sizing: border-box
 body
@@ -22,5 +25,87 @@ body
 iframe
   width: 100%
   height: 100%
-
-  
+.recommended
+  &__title:hover
+    cursor: pointer
+    color: $yellow
+  &__subtitle:hover
+    cursor: pointer
+    color: $yellow
+  &__button:hover
+    cursor: pointer
+    color: $yellow
+  &__tab:hover
+    color: $yellow
+    
+.best
+  &__title
+    transition: 0.3s all ease-out
+  &__title:hover
+    color: $yellow
+  &__button
+    transition: 0.3s all ease-out
+  &__button:hover
+    color: $yellow
+  &__link:hover
+    color: $yellow
+.header__hover--link:hover
+  text-color: $yellow
+  text-decoration: underline
+.header__hover
+  transition: 0.3s all ease-out
+  text-decoration: none
+  color: $dark-blue
+.header-button
+  transition: 0.3s all ease-out
+.header-button:hover
+  background-color: $yellow
+  color: #fff
+  cursor: pointer
+  border: 2px solid $yellow
+.blog
+  &__description
+    transition: 0.3s all ease-out
+  &__description:hover
+    color: $yellow
+  &__date
+    transition: 0.3s all ease-out
+  &__date:hover
+    color: $yellow
+  &__describe
+    transition: 0.3s all ease-out
+  &__describe:hover
+    color: $yellow
+  &__link
+    transition: 0.3s all ease-out
+  &__link:hover
+    color: $yellow
+  &__button
+    transition: 0.3s all ease-out
+  &__button:hover
+    color: $yellow
+.footer
+  &__ul
+    transition: 0.3s all ease-out
+  &__title:hover
+    color: $yellow
+  &__title
+    transition: 0.3s all ease-out
+  &__link:hover
+    color: $yellow
+  &__link
+    transition: 0.3s all ease-out
+  &__text
+    transition: 0.3s all ease-out
+  &__text:hover
+    color: $yellow
+  &__img
+    transition: 0.3s all ease-out
+  &__img:hover
+    background-color: $yellow
+    border-radius: 50%
+.heart
+  transition: 0.3s all ease-out
+.heart:hover
+  background-color: transparent
+  border-radius: 50%

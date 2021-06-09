@@ -1,9 +1,9 @@
 const swiper = new Swiper(".merit-container", {
-  // Optional parameters
-  slidesPerView: 4,
-  spaceBetween: 26,
+  spaceBetween: 10,
+  slidesPerView: 2,
+  slidesPerColumn: 2,
+  slidesPerColumnFill: "row",
   loop: false,
-  // Navigation arrows
   navigation: {
     nextEl: ".merit__button--next",
     prevEl: ".merit__button--prev",
@@ -14,26 +14,19 @@ const swiper = new Swiper(".merit-container", {
     onlyInViewport: "true",
   },
   breakpoints: {
-    576: {
-      slidesPerView: 4,
-      slidesPerColumn: 2,
-      slidesPerColumnFill: "row",
-      loop: false,
-    },
-    1200: {
-      slidesPerView: 4,
-      slidesPerColumnFill: "row",
-      loop: false,
-    },
-    991: {
-      slidesPerView: 4,
-      slidesPerColumnFill: "row",
-      loop: false,
+    575: {
+      spaceBetween: 16,
     },
     776: {
+      spaceBetween: 26,
+      slidesPerView: 2,
+      slidesPerColumn: 1,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1440: {
       slidesPerView: 4,
-      slidesPerColumnFill: "row",
-      loop: false,
     },
   },
 });
@@ -165,16 +158,16 @@ $(".modal__form").validate({
   errorClass: "invalid",
   messages: {
     name: {
-      required: "Please specify your name",
-      minlength: "The name must be more than two letters",
+      required: "Введите своё имя",
+      minlength: "Имя должно быть больше двух букв",
     },
     email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      required: "Нужен адрес email чтобы связаться с вами",
+      email: "Адрес должен быть в формате name@domain.ru",
     },
     phone: {
-      required: "Phone is required",
-      minlength: "You must enter 10 digits",
+      required: "Телефон обязателен",
+      minlength: "Должен быть больше 10 цифр",
     },
   },
 });
@@ -182,10 +175,9 @@ $(".newsletter__form").validate({
   errorClass: "invalid",
   messages: {
     email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      required: "Нужен адрес email чтобы связаться с вами",
+      email: "Адрес должен быть в формате name@domain.ru",
     },
   },
 });
 $(".modal__input--phone_us").mask("+7 (000) 000-00-00");
-AOS.init();
