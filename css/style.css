@@ -1092,7 +1092,10 @@ a {
 }
 
 .newsletter #email-error {
-  font-size: 10px;
+  font-size: 12px;
+  position: absolute;
+  left: 20px;
+  bottom: 3px;
 }
 
 .footer {
