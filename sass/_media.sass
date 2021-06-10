@@ -196,6 +196,55 @@
   .merit__item
     height: 300px
 @media (max-width: 991px)
+  .recommended
+    &__title:hover
+      cursor: pointer
+      color: $dark-blue
+    &__subtitle:hover
+      cursor: pointer
+      color: $dark-blue
+    &__button:hover
+      cursor: pointer
+      color: #fff
+    &__tab:hover
+      color: $blue
+    
+  .best
+    &__title:hover
+      color: $dark-blue
+    &__button:hover
+      color: #fff
+    &__link:hover
+      color: $blue
+  .header__hover--link:hover
+    text-color: $dark-blue
+    text-decoration: none
+  .header-button:hover
+    background-color: #fff
+    color: $blue
+    cursor: pointer
+    border: 1px solid $blue
+  .blog
+    &__description:hover
+      color: $dark-blue
+    &__date:hover
+      color: $dark-blue
+    &__describe:hover
+      color: $dark-blue
+    &__link:hover
+      color: $blue
+    &__button:hover
+      color: $blue
+  .footer
+    &__title:hover
+      color: $dark-blue
+    &__link:hover
+      color: $dark-blue
+    &__text:hover
+      color: $dark-blue
+    &__img:hover
+      background-color: transparent
+      border-radius: 80%
   .merit
     &__title
       padding-top: 16px
@@ -208,9 +257,9 @@
     &__button
       top: 110%
       &--next
-        right: 42%
+        right: 38%
       &--prev
-        left: 42%
+        left: 43%
     &__item
       height: 220px
   #email-error
@@ -316,6 +365,9 @@
     flex-wrap: wrap
   .modal__button
     margin-bottom: 20px
+  .blog
+    &__description
+      justify-content: center
 @media (max-width: 767px)
   .coop__title
     margin-bottom: 32px
@@ -462,9 +514,9 @@
     width: 36px
     height: 36px
   .merit__button--prev
-    left: 35%
+    left: 39%
   .merit__button--next
-    right: 35%
+    right: 26%
   .advantages-wrapper
     display: flex
     flex-direction: column
@@ -608,6 +660,9 @@
       height: 112px
     &__img
       top: 33%
+    &__input
+      height: 100%
+      padding-bottom: 25px
     &__button
       width: 91%
       margin-bottom: 12px
@@ -767,3 +822,4 @@
   .merit__title
     font-size: 16px
     line-height: 20px
+  

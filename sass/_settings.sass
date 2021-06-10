@@ -4,6 +4,9 @@ $dark-blue: #183B56
 $text-color: #5A7184
 $opacity: #B3BAC5
 $link: #1665D8
+html 
+  scroll-behavior: smooth
+
 a
   text-decoration: none
 
@@ -56,13 +59,13 @@ iframe
   transition: 0.3s all ease-out
   text-decoration: none
   color: $dark-blue
-.header-button
-  transition: 0.3s all ease-out
 .header-button:hover
   background-color: $yellow
   color: #fff
   cursor: pointer
-  border: 2px solid $yellow
+  border: 1px solid $yellow
+.header-button
+  transition: 0.3s all ease-out
 .blog
   &__description
     transition: 0.3s all ease-out
@@ -106,6 +109,24 @@ iframe
     border-radius: 50%
 .heart
   transition: 0.3s all ease-out
-.heart:hover
-  background-color: transparent
-  border-radius: 50%
+.swiper-button-disabled
+  opacity: 0.3
+.anchor__button
+  border-radius: 2px
+  position: fixed
+  right: 1%
+  bottom: 20%
+  border: 1px solid $yellow
+  padding: 10px
+  color: $yellow
+  text-decoration: none
+  z-index: 1000
+  transform: translateY(-50%)
+  opacity: 1
+  transition: opacity 0.4s linear
+.anchor
+  opacity: 1
+.active path
+  fill: red
+// .like path
+//   transition: 0.3s all ease-out
