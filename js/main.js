@@ -31,7 +31,7 @@ const swiper = new Swiper(".merit-container", {
       slidesPerColumn: 1,
     },
     1920: {
-      slidesPerView: 2,
+      slidesPerView: 4,
       slidesPerColumn: 1,
     },
   },
